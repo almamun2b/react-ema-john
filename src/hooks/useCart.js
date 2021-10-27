@@ -8,7 +8,7 @@ const useCart = () => {
         const savedCart = getStoredCart();
         // console.log(savedCart);
         const keys = Object.keys(savedCart);
-        fetch('http://localhost:5000/products/bykeys', {
+        fetch('https://young-wave-53752.herokuapp.com/products/bykeys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

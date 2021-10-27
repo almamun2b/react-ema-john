@@ -12,7 +12,7 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order = savedCart;
         // console.log(data)
-        fetch('http://localhost:5000/orders', {
+        fetch('https://young-wave-53752.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
